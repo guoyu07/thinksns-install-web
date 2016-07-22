@@ -1,0 +1,25 @@
+{
+  "name": "thinksns-install-web",
+  "version": "1.0.0",
+  "description": "ThinkSNS v4 Web page install soft.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/medz/thinksns-install-web.git"
+  },
+  "keywords": [
+    "thinksns",
+    "ts",
+    "ts4",
+    "medz"
+  ],
+  "author": "Seven Du <lovevipdsw@outlook.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/medz/thinksns-install-web/issues"
+  },
+  "homepage": "https://github.com/medz/thinksns-install-web#readme"
+}
