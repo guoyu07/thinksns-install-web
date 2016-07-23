@@ -1,0 +1,34 @@
+{
+    "name": "medz/thinksns-install-web",
+    "description": "ThinkSNS v4 Web page install soft.",
+    "type": "custom-folders",
+    "keywords": ["medz", "thinksns"],
+    "homepage": "http://medz.cn",
+    "license": "MIT",
+    "minimum-stability": "dev",
+    "authors": [
+        {
+            "name": "Seven Du",
+            "email": "lovevipdsw@outlook.com",
+            "homepage": "http://medz.cn",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": ">=5.3.12",
+        "medz/composer-vendor-install-folders": "^1.0"
+    },
+    "config": {
+        "preferred-install": "dist"
+    },
+    "support": {
+        "forum": "https://github.com/medz/composer-vendor-install-folders/issues",
+        "source": "https://github.com/medz/composer-vendor-install-folders.git"
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0-dev"
+        },
+        "custom-path": "install/"
+    }
+}
