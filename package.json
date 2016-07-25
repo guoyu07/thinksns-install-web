@@ -4,7 +4,7 @@
   "description": "ThinkSNS v4 Web page install soft.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "webpack --config webpack.dev.js --display-error-details -d --progress --colors"
   },
   "repository": {
     "type": "git",
@@ -33,9 +33,11 @@
     "babel-preset-react": "^6.11.1",
     "webpack": "^1.13.1"
   },
-   "dependencies": {
+  "dependencies": {
+    "material-ui": "^0.15.2",
     "react": "^15.2.1",
     "react-dom": "^15.2.1",
+    "react-tap-event-plugin": "^1.0.0",
     "superagent": "^2.1.0"
   }
 }
