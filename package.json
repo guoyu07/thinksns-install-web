@@ -4,6 +4,7 @@
   "description": "ThinkSNS v4 Web page install soft.",
   "main": "index.js",
   "scripts": {
+    "watch": "webpack --config webpack.dev.js --display-error-details -d --progress --colors --watch",
     "build": "webpack --config webpack.dev.js --display-error-details -d --progress --colors"
   },
   "repository": {
