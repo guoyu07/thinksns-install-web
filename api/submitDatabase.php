@@ -4,7 +4,7 @@ use Illuminate\Database\Capsule\Manager as Capsule;
 
 header('Content-type:application/json;charset=utf-8');
 
-$file = dirname(dirname(__DIR__)).'/ts/src/Vendor/autoload.php';
+$file = dirname(dirname(__DIR__)).'/ts/src/vendor/autoload.php';
 if (!file_exists($file)) {
     $file = dirname(__DIR__).'/vendor/autoload.php';
 }
