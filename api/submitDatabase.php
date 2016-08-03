@@ -115,24 +115,14 @@ try {
     exit;
 }
 
-$str = '<?php        ';
-$str .= 'return array(';
+$str = '<?php ';
+$str .= PHP_EOL;
+$str .= PHP_EOL;
+$str .= 'return array('.PHP_EOL;
 foreach ($config as $key => $value) {
-    $str .= '\''.$key.'\' => '.'\''.$value.'\',';
+    $str .= '    \''.$key.'\' => base64_decode(\''.base64_encode($value).'\'), '.PHP_EOL;
 }
-$str .= ');';
-
-// $config = array(
-//     'driver' => 'mysql',
-//     'host' => $host,
-//     'database' => $database,
-//     'username' => $username,
-//     'password' => $password,
-//     'charset' => 'utf8',
-//     'port' => intval($port),
-//     'prefix' => $prefix,
-//     'collation' => 'utf8_unicode_ci',
-// );
+$str .= ');'.PHP_EOL;
 
 $filepath = dirname(dirname(__DIR__)).'/ts/config/database.php';
 file_put_contents($filepath, $str);
