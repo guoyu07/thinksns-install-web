@@ -118,11 +118,8 @@ try {
 $str = '<?php ';
 $str .= PHP_EOL;
 $str .= PHP_EOL;
-$str .= 'return array('.PHP_EOL;
-foreach ($config as $key => $value) {
-    $str .= '    \''.$key.'\' => base64_decode(\''.base64_encode($value).'\'), '.PHP_EOL;
-}
-$str .= ');'.PHP_EOL;
+$str .= 'return '.var_export($config);
+$str .= ';'.PHP_EOL;
 
 $filepath = dirname(dirname(__DIR__)).'/ts/config/database.php';
 file_put_contents($filepath, $str);
